@@ -24,7 +24,7 @@ SECRET_KEY = '%mrh-c5r0$gqafh%sz$lb@63e&*=w!v5vw5u!@xk0i&scu%msw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sajansainju.com.np']
 
 
 # Application definition
