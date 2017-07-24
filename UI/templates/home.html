@@ -1,31 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-<!--<link rel="stylesheet" href="styles.css">-->
-    <title>Sentiment Analyser</title>
-<!--  -->
-<style>
+{% extends "base.html" %} {% block content %}
 
-</style>
+<section id="main_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
 
-</head>
+                <table class="table table-bordered senti_table">
+                    <thead>
+                        <tr>
+                            <th>Events</th>
+                            <th colspan="2" style="text-align:center">Sentiments ranking</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dummy event one</td>
+                            <td>
+                                <table class="table horse_table">
+                                    <tbody>
+                                     
+                                        <tr>
+                                            <td>horse one</td>
+                                            <td class="positive text-center"><button class="btn" type="" disabled>negative</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>horse one</td>
+                                            <td class="neutral text-center"><button class="btn" type="" disabled>negative</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>horse one</td>
+                                            <td class="negative text-center"><button class="btn" type="" disabled>negative</button></td>
+                                        </tr>
 
-<body>
 
-<h1>slakfjsdfl;kajs ;ldfk ja;sldkfj;lkj;lkaksjd;l</h1>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="max-width: 110px;">Sentiment analysis shows competitor '3' is the most popular for event A</td>
+                        </tr>
+                    
+
+                    </tbody>
+                </table>
 
 
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<script>
-
-</script>
-</body>
-</html>
+{% endblock %}
